@@ -9,5 +9,5 @@ description = "Library for processing 3D polygon meshes."
 
 
 [dependencies]
-emesh-core = { version = "0.0.1-alpha.3", path = "../emesh-core" }
+emesh-core = { version = "0.0.1-alpha.4", path = "../emesh-core" }
 

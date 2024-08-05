@@ -2,8 +2,7 @@
 
 Core primitives and operations for processing 3D polygon meshes.
 
-> [!WARNING]  
-> The library is at an early stage of development.
+The library is at an early stage of development.
 
 ## Contributing
 
