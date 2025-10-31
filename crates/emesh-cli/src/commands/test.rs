@@ -1,6 +1,6 @@
 use crate::error::Error;
-use std::path::PathBuf;
+use std::path::Path;
 
-pub fn run(_output_file_path: PathBuf) -> Result<(), Error> {
+pub fn run(_output_file_path: impl AsRef<Path>) -> Result<(), Error> {
     Ok(())
 }

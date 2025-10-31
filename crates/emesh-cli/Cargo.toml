@@ -9,10 +9,15 @@ description = "CLI tool for processing 3D polygon meshes."
 
 
 [dependencies]
-emesh = { version = "0.0.1-alpha.8", path = "../emesh" }
+emesh = { version = "0.0.1-alpha.9", path = "../emesh" }
 
 thiserror = { workspace = true }
 anyhow = { workspace = true }
 clap = { workspace = true, features = ["derive"] }
 tracing = { workspace = true }
 tracing-subscriber = { workspace = true }
+
+
+[[bin]]
+name = "emesh"
+path = "src/main.rs"

@@ -1,4 +1,5 @@
-use clap::{Parser, Subcommand};
+use clap::{Parser, Subcommand, ValueHint};
+use std::path::PathBuf;
 
 #[derive(Parser)]
 #[clap(author, version, about, long_about = None, propagate_version = true)]
@@ -12,7 +13,7 @@ pub enum Commands {
     /// Convert a mesh to a graphics representation
     Test {
         /// Path to the output directory
-        #[clap(short, long)]
-        output_path: String,
+        #[clap(short, long, value_hint = ValueHint::DirPath)]
+        output_path: PathBuf,
     },
 }
